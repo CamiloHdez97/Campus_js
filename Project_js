@@ -26,6 +26,25 @@ let primero = personajes.unshift();
 //Encontrar un indice de un elemento del Array
 let pos = personajes.indexOf('Iron Man');
 
+//Eliminar un elemento por posición
+let elementoEliminado = personajes.splice(personajes.indexOf('Iron Man'),1);
 
 
+//Eliminar varios elementos
+let posicion = personajes.indexOf('Hulk');
+let nroElementosBorrar = 2;
+personajes.splice(posicion,nroElementosBorrar);
+
+
+//Longitud del arreglo
+console.log(`Total de elementos en un arreglo ${personajes.length}`);
+
+//Verificar Item en array Devuelve True
+personajes.includes('Spiderman');
+
+//Unir con un Join los items en una sola cadena de texto.
+personajes.join();
+
+//Ordenar Items
+console.log(personajes.sort());
 
