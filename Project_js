@@ -1,0 +1,31 @@
+//Declarar un Array
+let peliculas = [];
+
+//Inicializar Array con dato
+let personajes = ['Iron Man'];
+
+//Acceder a un ejemplo del array por el indicie
+console.log(personajes[0]);
+
+//Agregar un elemento al final
+personajes.push('Pantera Negra');
+console.log(personajes);
+
+//Recorrer un Array
+personajes.forEach(function(elemento, indice, array){
+    console.log(elemento, indice); 
+});
+
+//Eliminar el ultimo elemento
+let ultimo = personajes.pop();
+console.warn(personajes);
+
+//Eliminar el primero
+let primero = personajes.unshift();
+
+//Encontrar un indice de un elemento del Array
+let pos = personajes.indexOf('Iron Man');
+
+
+
+
